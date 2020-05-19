@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <title>Grocery List</title>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-shopping-basket text-primary"></i>
+      My<span class="text-primary">Grocery</span>List
+    </h1>
+    <form id="grocery-form">
+      <div class="form-group">
+        <label for="item">Item</label>
+        <input type="text" id="item" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input type="text" id="category" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="text" id="quantity" class="form-control">
+      </div>
+      <input type="submit" value="Add Grocery" class="btn btn-primary btn-block">
+    </form>
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category</th>
+          <th>Quantity</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="grocery-list"></tbody>
+    </table>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
