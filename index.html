@@ -15,16 +15,34 @@
   <div class="container mt-4">
     <h1 class="display-4 text-center">
       <i class="fas fa-shopping-basket text-primary"></i>
-      My<span class="text-primary">Grocery</span>List
+      <span class="text-primary">GroceryList</span>
     </h1>
     <form id="grocery-form">
       <div class="form-group">
         <label for="item">Item</label>
         <input type="text" id="item" class="form-control">
       </div>
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="category">Category</label>
         <input type="text" id="category" class="form-control">
+      </div> -->
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select class="form-control" id="category">
+          <option></option>
+          <option value="Beverages">Beverages</option>
+          <option value="Bread/Bakery">Bread/Bakery</option>
+          <option value="Canned/Jarred Goods">Canned/Jarred Goods</option>
+          <option value="Dairy">Dairy</option>
+          <option value="Dry/Baking Goods">Dry/Baking Goods</option>
+          <option value="Frozen Foods">Frozen Foods</option>
+          <option value="Meat">Meat</option>
+          <option value="Produce">Produce</option>
+          <option value="Cleaners">Cleaners</option>
+          <option value="Paper Goods">Paper Goods</option>
+          <option value="Personal Care">Personal Care</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
       <div class="form-group">
         <label for="quantity">Quantity</label>
